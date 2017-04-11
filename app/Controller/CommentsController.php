@@ -15,6 +15,10 @@ class CommentsController extends AppController {
 		);
 	public $uses =  array('User','Comment','Follow');
 
+	public function test() {
+		
+	}
+
 	public function tweet() {
 		$this->loadModel('Follow');
 		// 今ログインしているユーザーIDを変数にしておく
